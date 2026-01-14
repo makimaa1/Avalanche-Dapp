@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avalanche Nexus Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="main-wrapper">
+      <div class="container">
+        <header>
+          <div class="logo-container">
+            <span class="logo-icon">🔺</span>
+          </div>
+          <h1>Avalanche Portal</h1>
+          <p class="subtitle">Secure Web3 Integration</p>
+        </header>
+
+        <div class="status-badge" id="statusBadge">
+          <span class="dot"></span>
+          <span id="statusText">Disconnected</span>
+        </div>
+
+        <div class="card">
+          <div class="info-group">
+            <label>Network Status</label>
+            <p id="network" class="value">-</p>
+          </div>
+          
+          <div class="info-group">
+            <label>Wallet Address</label>
+            <p id="address" class="value address-text">-</p>
+          </div>
+
+          <div class="info-group">
+            <label>Balance</label>
+            <p class="value"><span id="balance">-</span> <span class="unit">AVAX</span></p>
+          </div>
+        </div>
+
+        <div id="errorMsg" class="error-box" style="display: none;"></div>
+
+        <button id="connectBtn" class="btn-primary">Connect Wallet</button>
+
+        <footer class="user-info">
+          <p>Developed by <strong>Agung</strong></p>
+          <p class="student-id">Teknik Informatika</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
