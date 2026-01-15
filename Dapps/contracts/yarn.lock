@@ -1879,6 +1879,7 @@ __metadata:
     "@types/mocha": "npm:>=9.1.0"
     "@types/node": "npm:>=22.0.0"
     chai: "npm:^4.2.0"
+    dotenv: "npm:^17.2.3"
     hardhat: "npm:^2.14.0"
     hardhat-gas-reporter: "npm:^2.3.0"
     solidity-coverage: "npm:^0.8.0"
@@ -2050,6 +2051,13 @@ __metadata:
   dependencies:
     path-type: "npm:^4.0.0"
   checksum: 10c0/dcac00920a4d503e38bb64001acb19df4efc14536ada475725e12f52c16777afdee4db827f55f13a908ee7efc0cb282e2e3dbaeeb98c0993dd93d1802d3bf00c
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^17.2.3":
+  version: 17.2.3
+  resolution: "dotenv@npm:17.2.3"
+  checksum: 10c0/c884403209f713214a1b64d4d1defa4934c2aa5b0002f5a670ae298a51e3c3ad3ba79dfee2f8df49f01ae74290fcd9acdb1ab1d09c7bfb42b539036108bb2ba0
   languageName: node
   linkType: hard
 
