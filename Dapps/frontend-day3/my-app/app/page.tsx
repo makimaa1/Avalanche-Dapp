@@ -13,7 +13,7 @@ import {
 import { injected } from 'wagmi/connectors';
 import { avalancheFuji } from 'wagmi/chains';
 // 👇 Import Service Frontend
-import { getBlockchainValue } from '@/services/blockchain.service';
+import { getBlockchainValue } from '@/src/services/blockchain.service';
 
 // 👉 GANTI DENGAN CONTRACT ADDRESS KAMU
 const CONTRACT_ADDRESS = '0x98598442f1d8e469a4fca0602bf9d2b4377845a7'; 
