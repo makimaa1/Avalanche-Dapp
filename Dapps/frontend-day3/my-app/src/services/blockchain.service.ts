@@ -15,6 +15,6 @@ export async function getBlockchainValue() {
     throw new Error("Failed to fetch blockchain value");
   }
 
-  // Backend mengembalikan angka dalam bentuk string/text
-  return res.text();
+ const data = await res.json(); 
+  return data.value;
 }
