@@ -5,16 +5,19 @@ export async function getBlockchainValue() {
     throw new Error("NEXT_PUBLIC_BACKEND_URL is not defined");
   }
 
-  // Request ke Backend API (NestJS)
   const res = await fetch(`${BACKEND_URL}/blockchain/value`, {
     method: "GET",
-    cache: "no-store", // Agar data selalu fresh (realtime)
+    cache: "no-store",
   });
 
   if (!res.ok) {
     throw new Error("Failed to fetch blockchain value");
   }
 
- const data = await res.json(); 
-  return data.value;
+  // 👇 PERBAIKAN DISINI:
+  // Kita ubah response jadi object JSON, lalu ambil properti .value nya saja
+  const data = await res.json(); 
+  
+  // Pastikan mengembalikan string angka saja (contoh: "3")
+  return data.value; 
 }
